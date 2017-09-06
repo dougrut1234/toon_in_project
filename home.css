@@ -1,0 +1,62 @@
+#logo {
+	width: 400px;
+	height: auto;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#tagline {
+	font-family: 'Lato', sans-serif;
+	font-size: 42px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-style: italic;
+	float: right;
+	margin-right: 50px;
+	margin-top: 50px;
+	color: #871C05;
+}
+
+#shirt {
+	width: 450px;
+	height: auto;
+	float: left;
+	margin-top: 250px;
+	margin-left: -350px;
+}
+
+#tab_margin {
+	float: right;
+	margin-right: -365px;
+}
+
+.tab {
+	float: right;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	margin-top: 120px;
+	margin-left: 40px;
+	cursor: pointer;
+}
+
+#about_us {
+	float: right;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	margin-left: 600px;
+	margin-right: 50px;
+	margin-top: -500px;
+	line-height: 40px
+}
+
+#our_story {
+	float: right;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	margin-left: 600px;
+	margin-right: 50px;
+	margin-top: -500px;
+	line-height: 40px;
+	cursor: pointer;
+}

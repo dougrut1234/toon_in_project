@@ -1,0 +1,43 @@
+#logo {
+	width: 400px;
+	height: auto;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#promo {
+	width: 700px;
+	height: auto;
+	margin-left: -125px;
+	margin-top: 75px;
+}
+
+#tagline {
+	font-family: 'Lato', sans-serif;
+	font-size: 42px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-style: italic;
+	float: right;
+	margin-right: 50px;
+	margin-top: 50px;
+	color: #871C05;
+}
+
+#enter {
+	font-family: 'Slabo 27px', serif;
+	font-size: 42px;
+	margin-top: -5px;
+	text-align: center;
+	cursor: pointer;
+
+}
+
+#enter:hover {
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    opacity: .25;
+}

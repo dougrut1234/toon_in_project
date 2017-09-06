@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+	<img id="logo" src="tooninlogo.jpg">
+	<p id="tagline">Look. Learn. Laugh!</p>
+
+	<div id="tab_margin">
+		<p class="tab">Contact</p>
+		<p class="tab">Our Books</p>
+		<p onclick="ourStory()" class="tab">Our Story</p>
+		<p onclick="aboutUs()" class="tab">About Us</p>
+	</div>
+
+	<img id="shirt" src="shirt.png">
+
+	<p id="about_us"></p>
+
+	<p id="our_story"></p>
+	
+</body>
+
+<script>
+function ourStory() {
+    document.getElementById("our_story").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et architecto deleniti excepturi similique consectetur autem blanditiis commodi quam obcaecati id omnis earum aperiam tempore saepe soluta asperiores rerum distinctio, deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem porro, temporibus. Tempore deserunt et quo quae tenetur ea dolorum, enim excepturi sed asperiores, quisquam nesciunt expedita. Quibusdam, quod, temporibus!";
+    document.getElementById("about_us").style.display = "none";
+}
+function aboutUs() {
+    document.getElementById("about_us").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et architecto deleniti excepturi similique consectetur autem blanditiis commodi quam obcaecati id omnis earum aperiam tempore saepe soluta asperiores rerum distinctio, deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem porro, temporibus. Tempore deserunt et quo quae tenetur ea dolorum, enim excepturi sed asperiores, quisquam nesciunt expedita. Quibusdam, quod, temporibus!";
+    document.getElementById("our_story").style.display = "none";
+}
+
+</script>
+
+
+</html>
