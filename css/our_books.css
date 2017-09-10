@@ -86,3 +86,16 @@
     opacity: .50;
     cursor: pointer;
 }
+
+a {
+	color: black;
+}
+
+#legal_toons_negligence {
+	clear: left;
+	clear: right;
+	clear: left;
+	margin-left: 100px;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+}
