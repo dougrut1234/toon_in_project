@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/read.css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+
+	<a href="home.html"><img id="logo_center" src="images/tooninlogo.jpg"></a>
+	<p id="tagline">Look. Learn. Laugh!</p>
+
+	<div id="tab_margin">
+	    <a href="home.html"><p onclick="aboutUs()" class="tab">About Us</p></a>
+	    <a href="our_story.html"><p onclick="ourStory()" class="tab">Our Story</p></a>
+	    <a href="our_books.html"><p class="tab">Our Books</p></a>
+	    <p class="tab">Contact</p>
+	  </div>
+
+	<img id="book" src="images/tooninfrontcover.png">
+
+<p id="scenario">Common Law</p>
+<p id="scenario_description">Common law is unwritten law that originated hundreds of years ago, going all the way back to England, where it then settled here in the states. A long time ago, kings were able to make up laws.<br><br>Fortunately, laws change over time, and we don’t have kings in the United States anymore. </p>
+<p id="scenario2">Statutory Law</p>
+<p id="scenario_description2">Unlike common law, statutory law is written law that has been codified.<br><br>This Public Policy is established by our legislators.
+</p>
+<p id="scenario3">Preponderance of the Evidence</p>
+<p id="scenario_description3">One of the standards of proof in civil/tort law used in a court of law.<br><br>It means “more probable than not” or “more true than not true” (51% true vs. 49% not true).
+<p id="scenario4">Clear and Convincing</p>
+<p id="scenario_description4">The other standard of proof in civil/tort law, used in a court of law. In order to win the case, it must be substantially more probable than not.</p>  
+
+
+<img id="myImg" src="samples/sample1.jpg" alt="Look at England and its kings as a school principal. They originate the laws and rules of what goes for the kids. They have the appropriate authority to expel when a child acts up." width="150" height="100">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<img id="myImg2" src="samples/sample2.jpg" alt="Now instead of looking at England and kings, we will look at politicians and judges as the teachers. Before the school year starts, they set up classroom rules and hand out a grading policy in which they themselves have established.
+" width="150" height="100">
+
+<div id="myModal2" class="modal">
+
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <img class="modal-content" id="img02">
+
+  <div id="caption2"></div>
+</div>
+
+<img id="myImg3" src="samples/sample3.jpg" alt="Someone broke the cookie jar! Andy and his daughter Abigail are present at the scene of the crime. Abigail loves cookies and was told not to have any. Andy has crumbs around his mouth but does that mean he tried to reach for the cookie jar like Abigail would? Though it’s not clear -cut, but looking at the evidence, it’s more likely true Andy accidentally broke the cookie jar.
+" width="150" height="100">
+
+<div id="myModal3" class="modal">
+
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <img class="modal-content" id="img03">
+
+  <div id="caption3"></div>
+
+</div>
+
+<img id="myImg4" src="samples/sample4.jpg" alt="Someone broke the cookie jar-again! This time only Abigail is present at the scene of the crime. Could a bird have flown in and knocked it down? Possibly. But it’s much more probable that the cookie lover, Abigail, tried to reach for the jar, and it fell off the table, breaking it—no matter how much she would deny it." width="150" height="100">
+
+<div id="myModal4" class="modal">
+
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <img class="modal-content" id="img04">
+
+  <div id="caption4"></div>
+
+</div>
+
+<p id="click"><i>Click Picture For A Story!</i></p>
+
+<script>
+
+var modal = document.getElementById('myModal4');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg4');
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption4");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
+
+<script>
+
+var modal = document.getElementById('myModal3');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg3');
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption3");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
+
+<script>
+
+var modal = document.getElementById('myModal2');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
+
+<script>
+
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#myImg").mouseover(function(){
+        $("#scenario").show();
+        $("#scenario_description").show();
+    });
+    $("#myImg").mouseleave(function(){
+        $("#scenario").hide();
+        $("#scenario_description").hide();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#myImg2").mouseover(function(){
+        $("#scenario2").show();
+        $("#scenario_description2").show();
+    });
+    $("#myImg2").mouseleave(function(){
+        $("#scenario2").hide();
+         $("#scenario_description2").hide();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#myImg3").mouseover(function(){
+        $("#scenario3").show();
+        $("#scenario_description3").show();
+    });
+    $("#myImg3").mouseleave(function(){
+        $("#scenario3").hide();
+        $("#scenario_description3").hide();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#myImg4").mouseover(function(){
+        $("#scenario4").show();
+        $("#scenario_description4").show();
+    });
+    $("#myImg4").mouseleave(function(){
+        $("#scenario4").hide();
+        $("#scenario_description4").hide();
+    });
+});
+</script>

@@ -9,37 +9,20 @@
 </head>
 
 <body>
-	<img id="logo" src="images/tooninlogo.jpg">
+	<a href="home.html"><img id="logo_center" src="images/tooninlogo.jpg"></a>
 	<p id="tagline">Look. Learn. Laugh!</p>
 
 	<div id="tab_margin">
-		<p class="tab">Contact</p>
-		<p class="tab">Our Books</p>
-		<p onclick="ourStory()" class="tab">Our Story</p>
-		<p onclick="aboutUs()" class="tab">About Us</p>
-	</div>
+	    <a href="home.html"><p onclick="aboutUs()" class="tab">About Us</p></a>
+	    <a href="our_story.html"><p onclick="ourStory()" class="tab">Our Story</p></a>
+	    <a href="our_books.html"><p class="tab">Our Books</p></a>
+	    <p class="tab">Contact</p>
+	  </div>
 
-	<img id="shirt" src="images/shirt.png">
+<img id="scale" src="images/scale.png">
 
-	<p id="about_us"></p>
+<p id="about_us"><b>Rules. Rules. Laws.</b> We can’t live in a functional society without them and explaining them to the young ones can be seen as quite the chore. Getting them to actually a listen is a challenge and getting them to actually learn and follow…well there’s still no guarantee. How could you get them to enjoy learning when it isn’t fun? Our Toon In books will change all that. Fun for all ages, including grown-ups, our books will help anyone grasp simple rules and laws that we must follow throughout our everyday lives. Told with colorful characters and popping illustrations, our books will make it not only fun but most importantly easy to remember starting with our first book: <b>Legal Toons: Negligence Law!</b></p>
 
-	<p id="our_story"></p>
-	
+
 </body>
-
-<script>
-function ourStory() {
-    document.getElementById("our_story").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et architecto deleniti excepturi similique consectetur autem blanditiis commodi quam obcaecati id omnis earum aperiam tempore saepe soluta asperiores rerum distinctio, deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem porro, temporibus. Tempore deserunt et quo quae tenetur ea dolorum, enim excepturi sed asperiores, quisquam nesciunt expedita. Quibusdam, quod, temporibus!";
-    document.getElementById("about_us").style.display = "none";
-}
-function aboutUs() {
-    document.getElementById("about_us").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et architecto deleniti excepturi similique consectetur autem blanditiis commodi quam obcaecati id omnis earum aperiam tempore saepe soluta asperiores rerum distinctio, deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem porro, temporibus. Tempore deserunt et quo quae tenetur ea dolorum, enim excepturi sed asperiores, quisquam nesciunt expedita. Quibusdam, quod, temporibus!";
-    document.getElementById("our_story").style.display = "none";
-}
-
-</script>
-
-
-
-
 </html>

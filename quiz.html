@@ -1,6 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8"/>
+<title>Quiz</title>
+  <link rel="stylesheet" type="text/css" href="css/quiz.css">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<style>
+div#test 
+
+
+</style>
+
+<a href="home.html"><img id="logo_center" src="images/tooninlogo.jpg"></a>
+<p id="tagline">Look. Learn. Laugh!</p>
+
+<!-- <div id="tab_margin">
+    <a href="home.html"><p onclick="aboutUs()" class="tab">About Us</p></a>
+    <a href="our_story.html"><p onclick="ourStory()" class="tab">Our Story</p></a>
+    <a href="our_books.html"><p class="tab">Our Books</p></a>
+    <p class="tab">Contact</p>
+  </div>
+ -->
+
+<div id="send_down">
+
+
+<a href="negligence.html"><p id="back">Back</p></a>
+<a href="show_answers.html"><p id="show_answers">Show Answers</p></a>
+<a href="quiz.html"><p id="restart">Restart</p></a>
+</div>
+<div id="padding-bottom"></div>
+<script type="text/javascript">
+// pos is position of where the user in the test or which question they're up to
+var pos = 0, test, test_status, question, choice, choices, chA, chB, correct = 0;
+// this is a multidimensional array with 4 inner array elements with 5 elements inside them
+// if you don't want answers viewable in the code, then you should use PHP and mySQL database
+var questions = [
+  ["All the roads this morning were pretty icy so Andy decided to order a pizza. An hour later, when the pizza boy walks onto his driveway, he slips and twists his ankle. Is Andy liable for the pizza boy’s injury? ", "Liable", "Not Liable", "A"],
+  ["It’s Halloween! Coming home from trick-or-treating, Andy is pursued by Angry Earl, who chases him with a bat. Is Angry Earl committing “battery” or “assault’?", "Battery", "Assault", "B"],
+  ["Bobby the Bully shared some obviously doctored nasty photos of the vice president of a Fortune 500 company. Can he be sued for defamation?", "Yes", "No", "A"],
+  ["Andy, an employee of Fackina’s Flowers, is delivering some flowers when he found out that he has five minutes to kill. He absolutely has to buy advanced tickets to the latest Night of the Redhawk movie. He decides to drive a few miles in the other direction to the nearest theater. On the way, he rear-ends another vehicle. Is he liable for damages?", "Yes", "No", "A"],
+  ["Mrs. Fryer has not met the new student in her eighth grade class yet. Nevertheless, she declared him as a 'moron' to the entire class. Though she will likely get fired, can she be sued for defamation?", "Yes", "No", "B"],
+  ["Andy wants to pet the wild boars owned by Farmer Dole. He walks to the secured gate, and he releases the lock. Unsurprisingly, the boars chase him across the field and attack him. Is Farmer Dole liable for Andy’s injuries?", "Yes", "No", "A"],
+  ["There are no tornados in this town! Well...while Andy was driving a tornado magically appeared and flew his car into the Stephensons' house. Is Andy liable for damages?", "Yes", "No", "B"],
+  ["Andy drives a steamroller at 2 MPH. One hundred yards away, Victor the Victim screams in fear of getting squished. If, not under his control, Andy does squish him, will he be found liable?", "Yes", "No", "B"],
+  ["It’s a dark and stormy night. Andy and a buddy are riding their bikes back from the movies. There is a huge thunderclap followed by heavy rain. After another loud thunderclap, Andy and his friend bolt off their bikes in fear and race into the Stephensons’ house, breaking down their door. Even though they are doing this to prevent themselves from getting severely hurt, are they still liable for damages?", "Yes", "No", "A"],
+  ["Andy is tied up. A man orders him to read off a list of illegal activities that must be done. If Andy doesn’t obey, something bad will be inflicted upon him. Could Andy raise any defense which would free him from liability?", "Yes", "No", "A"],
+  ];
+// this get function is short for the getElementById function  
+function get(x){
+  return document.getElementById(x);
+}
+function renderQuestion(){
+  test = get("test");
+  test_size = get("test_size")
+  if(pos >= questions.length){
+    test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct.</h2>";
+    get("test_status").innerHTML = "Quiz complete!";
+    // resets the variable to allow users to restart the test
+    pos = 0;
+    correct = 0;
+    // stops rest of renderQuestion function running when test is completed
+    return false;
+  }
+  get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+  question = questions[pos][0];
+  chA = questions[pos][1];
+  chB = questions[pos][2];
+  test.innerHTML = "<h3>"+question+"</h3>";
+  // the += appends to the data we started on the line above
+  test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+  test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+function checkAnswer(){
+  // use getElementsByName because we have an array which it will loop through
+  choices = document.getElementsByName("choices");
+  for(var i=0; i<choices.length; i++){
+    if(choices[i].checked){
+      choice = choices[i].value;
+    }
+  }
+  // checks if answer matches the correct choice
+  if(choice == questions[pos][3]){
+    //each time there is a correct answer this value increases
+    correct++;
+  }
+  // changes position of which character user is on
+  pos++;
+  // then the renderQuestion function runs again to go to next question
+  renderQuestion();
+}
+window.addEventListener("load", renderQuestion, false);
+</script>
+
+</head>
+
+<body>
+<h2 id="test_status"></h2>
+<div id="test"></div>
+</body>
+</div>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <title>Document</title>
   <script type="text/javascript" src="quiz.js"></script>
@@ -34,3 +140,4 @@
 
 </body>
 </html>
+ -->

@@ -44,24 +44,28 @@
 	float: left;
 	margin-top: 20px;
 	margin-left: 120px;
+	border: 2px solid black;
 }
 
 #teacher {
 	float: left;
 	margin-top: 20px;
 	margin-left: 120px;
+	border: 2px solid black;
 }
 
 #lawyer {
 	float: left;
 	margin-top: 150px;
 	margin-left: 120px;
+	border: 2px solid black;
 }
 
 #business {
 	float: left;
 	margin-top: 150px;
 	margin-left: 120px;
+	border: 2px solid black;
 }
 
 #first_are_you {
@@ -83,7 +87,7 @@
 
 #educator {
 	float: left;
-	margin-left: 400px;
+	margin-left: 410px;
 	margin-top: 25px;
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;
@@ -139,7 +143,7 @@
 
 #a_business {
 	float: left;
-	margin-left: 500px;
+	margin-left: 450px;
 	margin-top: 25px;
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/show_answers.css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+
+<a href="home.html"><img id="logo_center" src="images/tooninlogo.jpg"></a>
+<p id="tagline">Look. Learn. Laugh!</p>
+	
+<p id="quiz_answers_title">Legal Toons: Negligence - Answers</p>
+<a href="quiz.html"><p id="return_to_quiz">Return To Quiz</p></a>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images_for_answers/answer_one.jpg" style="width:100%">
+    <div class="numbertext">Answer One</div>
+    <div class="text">Andy would be liable if he did not warn the pizza boy that driveway is slippery.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images_for_answers/answer_two.jpg" style="width:100%">
+    <div class="numbertext">Answer Two</div>
+    <div class="text">It's assault because battery requires ACTUAL harm and assault constitutes as "threatening to harm".</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images_for_answers/answer_three.jpg" style="width:100%">
+    <div class="numbertext">Answer Three</div>
+    <div class="text">Yes. If Bobby the Bully wants to be successfully sued for defamation from a PUBLIC FIGURE, the plaintiff could easily prove Bobby the Bully showed a higher standard, or actual malice, and reckless disregard of the truth.</div>
+   </div>
+  
+  <div class="mySlides fade">
+    <img src="images_for_answers/answer_four.jpg" style="width:100%">
+    <div class="numbertext">Answer Four</div>
+    <div class="text">Yes. Because Andy took a substantial route away from his work, he would be liable for any accident he causes. This falls under "Frolic" in vicarious liability.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images_for_answers/answer_five.jpg" style="width:100%">
+    <div class="numbertext">Answer Five</div>
+    <div class="text">No. Mrs. Fryer may get fired but she cannot be sued for defamation because she does not really know the new student.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images_for_answers/answer_six.jpg"" style="width:100%">
+    <div class="numbertext">Answer Six</div>
+    <div class="text">Farmer Dole IS LIABLE for Andy’s injuries even though the cage is locked and secure. Farmer Dole can be sued under STRICT LIABILITY as wild animals are inherently dangerous, and Farmer Dole is still at fault no matter how much care is taken.</div>
+  </div>
+
+   <div class="mySlides fade">
+    <img src="images_for_answers/answer_seven.jpg" style="width:100%">
+    <div class="numbertext">Answer Seven</div>
+    <div class="text">No. If the accident came from a natural, unexpected event that is the cause of the damage, like a tornado that suddenly appears; Andy will not be liable.
+</div>
+   </div>
+  
+  <div class="mySlides fade">
+    <img src="images_for_answers/answer_eight.jpg" style="width:100%">
+    <div class="numbertext">Answer Eight</div>
+    <div class="text">No. If the plaintiff had the last clear chance to get out of the way to avoid damage, then Andy will not be liable.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images_for_answers/answer_nine.jpg" style="width:100%">
+    <div class="numbertext">Answer Nine</div>
+    <div class="text">Unfortunately, yes. Even though Andy and his buddy could have suffered severe injuries and it's imperative to break down the door for safety, they would still be liable for damages due to "necessity".</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images_for_answers/answer_ten.jpg"" style="width:100%">
+    <div class="numbertext">Answer Ten</div>
+    <div class="text">Yes. Andy could use the duress defense. Duress is any conduct which overpowers will and coerces conduct that otherwise would not be done. This is very common in spy films. However, Andy CANNOT use the duress defense if he is coerced into murder.</div>
+ 
+</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div id="dot" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span>  
+</div>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html>
